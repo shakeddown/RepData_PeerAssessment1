@@ -20,7 +20,7 @@ tot_spd <- by(data = spd_data$steps,spd_data$date, sum,na.rm=T)
 hist(tot_spd)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 ```r
 mean(tot_spd)
@@ -45,7 +45,7 @@ spd_by_min <- by(data= spd_data$steps,spd_data$interval, mean, na.rm=T )
 plot(spd_by_min,type="l")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 ```r
 which(spd_by_min==max(spd_by_min))
@@ -75,7 +75,7 @@ tot_spd_filled <- by(data = spd_data_filled$steps,spd_data_filled$date, sum,na.r
 hist(tot_spd_filled)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 ```r
 mean(tot_spd_filled)
@@ -109,4 +109,4 @@ plot(spd_by_min_weekday,type="l")
 plot(spd_by_min_weekend,type="l")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
